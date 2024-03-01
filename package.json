@@ -1,0 +1,22 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "xray": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.4",
+    "cypress-plugin-api": "^2.11.1"
+  },
+  "devDependencies": {
+    "cypress-xray-plugin": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.3.3"
+  }
+}
