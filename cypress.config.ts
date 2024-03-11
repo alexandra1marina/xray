@@ -3,17 +3,18 @@ import { addXrayResultUpload, configureXrayPlugin } from "cypress-xray-plugin";
 
 export default defineConfig({
   e2e: {
+    specPattern:'**.cy.js',
 		async setupNodeEvents(on, config) {
       await configureXrayPlugin(
           config,
           {
               jira: {
-                  projectKey: "KAN",         // placeholder value
-                  url: "https://alexandrairinamarina1.atlassian.net" // placeholder value
+                  projectKey: "TMT",         // placeholder value
+                  url: "https://jiratestingwebsite.atlassian.net/" // placeholder value
               },
               xray: {
                 status: {
-                  failed: "FAIL",
+                  failed: "FAILED",
                   passed: "PASSED"
               }
               },
